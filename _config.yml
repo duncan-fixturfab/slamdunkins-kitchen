@@ -1,0 +1,20 @@
+# Site settings
+title: Slamdunkin's Kitchen
+description: A simple recipe collection
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Collections
+collections:
+  recipes:
+    output: true
+    permalink: /recipes/:title/
+
+# Exclude files
+exclude:
+  - README.md
+  - .gitignore

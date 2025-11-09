@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article>
+  <h1>{{ page.title }}</h1>
+
+  <div class="recipe-meta">
+    {% if page.date %}
+    <span class="date">{{ page.date | date: "%B %d, %Y" }}</span>
+    {% endif %}
+    {% if page.servings %}
+    <span> | Servings: {{ page.servings }}</span>
+    {% endif %}
+    {% if page.prep_time %}
+    <span> | Prep: {{ page.prep_time }}</span>
+    {% endif %}
+    {% if page.cook_time %}
+    <span> | Cook: {{ page.cook_time }}</span>
+    {% endif %}
+  </div>
+
+  {{ content }}
+</article>
