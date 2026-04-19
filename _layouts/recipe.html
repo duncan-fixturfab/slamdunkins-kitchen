@@ -7,16 +7,16 @@ layout: default
 
   <div class="recipe-meta">
     {% if page.date %}
-    <span class="date">{{ page.date | date: "%B %d, %Y" }}</span>
+    <span>{{ page.date | date: "%b %d, %Y" }}</span>
     {% endif %}
     {% if page.servings %}
-    <span> | Servings: {{ page.servings }}</span>
+    <span>Serves {{ page.servings }}</span>
     {% endif %}
     {% if page.prep_time %}
-    <span> | Prep: {{ page.prep_time }}</span>
+    <span>Prep {{ page.prep_time }}</span>
     {% endif %}
     {% if page.cook_time %}
-    <span> | Cook: {{ page.cook_time }}</span>
+    <span>Cook {{ page.cook_time }}</span>
     {% endif %}
   </div>
 

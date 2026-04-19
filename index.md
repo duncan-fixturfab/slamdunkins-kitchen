@@ -21,4 +21,4 @@ A collection of recipes, written simply.
 {% endfor %}
 </ul>
 
-[View all recipes →](/recipes/)
+<a class="btn" href="{{ '/recipes/' | relative_url }}">View all recipes →</a>
