@@ -1,6 +1,6 @@
 # Slamdunkin's Kitchen
 
-A simple recipe website built with Jekyll and hosted on GitHub Pages.
+A simple recipe website built with Jekyll and deployed on Vercel.
 
 ## Features
 
@@ -36,26 +36,29 @@ cook_time: Cooking time
 To run this site locally:
 
 ```bash
-gem install bundler jekyll
-jekyll serve
+bundle install
+bundle exec jekyll serve
 ```
 
 Then visit `http://localhost:4000`
 
 ## Deployment
 
-This site auto-deploys to GitHub Pages via GitHub Actions
-(`.github/workflows/deploy.yml`). Any push or merge to the `main` branch
-triggers a build and deploy automatically.
+This site is deployed on [Vercel](https://vercel.com). Build settings live
+in `vercel.json` (framework preset `jekyll`, building to `_site`), and the
+Ruby/Jekyll dependencies are pinned in the `Gemfile`.
 
 One-time setup:
 
-1. Go to repository Settings → Pages
-2. Under "Build and deployment", set Source to **GitHub Actions**
+1. In the Vercel dashboard, **Add New… → Project** and import this
+   GitHub repository.
+2. Vercel reads `vercel.json` automatically — no build settings to change.
+3. Click **Deploy**.
 
-After that, merging to `main` will build and publish the site with no
-manual steps. You can also trigger a deploy manually from the Actions tab
-("Deploy site to GitHub Pages" → Run workflow).
+After that, Vercel deploys automatically on every push:
+
+- Pushes/merges to the production branch (`main`) publish to production.
+- Pull requests get their own preview deployment.
 
 ## Structure
 
