@@ -4,7 +4,7 @@ A simple recipe website built with Jekyll and hosted on GitHub Pages.
 
 ## Features
 
-- Clean, minimal design with white background and black text
+- Clean, modern design with a warm cream background and terracotta accents
 - Recipe posts written in Markdown
 - Simple navigation
 - Mobile-friendly
@@ -44,15 +44,18 @@ Then visit `http://localhost:4000`
 
 ## Deployment
 
-This site is configured for GitHub Pages. To deploy:
+This site auto-deploys to GitHub Pages via GitHub Actions
+(`.github/workflows/deploy.yml`). Any push or merge to the `main` branch
+triggers a build and deploy automatically.
 
-1. Push changes to the repository
-2. Go to repository Settings → Pages
-3. Set Source to "Deploy from a branch"
-4. Select your branch (e.g., `claude/recipe-posting-website-011CUwg3dFbDBhXnb1y76RxL` or `main`)
-5. Click Save
+One-time setup:
 
-GitHub Pages will automatically build and deploy your site.
+1. Go to repository Settings → Pages
+2. Under "Build and deployment", set Source to **GitHub Actions**
+
+After that, merging to `main` will build and publish the site with no
+manual steps. You can also trigger a deploy manually from the Actions tab
+("Deploy site to GitHub Pages" → Run workflow).
 
 ## Structure
 
