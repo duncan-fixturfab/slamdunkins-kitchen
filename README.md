@@ -4,7 +4,7 @@ A simple recipe website built with Jekyll and hosted on GitHub Pages.
 
 ## Features
 
-- Clean, minimal design with white background and black text
+- Clean, modern design with a warm cream background and terracotta accents
 - Recipe posts written in Markdown
 - Simple navigation
 - Mobile-friendly
